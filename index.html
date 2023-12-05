@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" href="./images/favicon.ico">
+	<title>ガソリン代の計算</title>
+	<!-- CSS -->
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+	<link rel="stylesheet" href="./css/custom.css">
+</head>
+<body>
+	<h1>= ガソリン代の計算 =</h1>
+	<div id="nyuryoku">
+		<p id="p1">
+			ガソリン価格:<input type="text" id="input_a">円/L
+		</p>
+		<p id="p2">
+			走行距離:<input type="text" id="input_b">km
+		</p>
+		<p id="p3">
+			車の燃費:<input type="text" id="input_c">km/L
+		</p>
+		<p>
+			<button id="btn_calc">計算をする</button>
+		</p>
+	</div>
+	<div id="hyouji">
+		<p>
+			<strong id="msg_info">-</strong>
+		</p>
+		<p>
+			ガソリン代は:<strong id="msg_result">*</strong>円です
+		</p>
+	</div>
+	<!-- JavaScript -->
+	<script src="//code.jquery.com/jquery-3.6.1.min.js"></script>
+	<script src="//cdn.jsdelivr.net/npm/howler@2.2.3/dist/howler.js"></script>
+	<script src="./main.js"></script>
+</body>
+</html>
